@@ -1,4 +1,4 @@
-# Sakura Nihongo 🌸
+# Yumemi Nihongo 🌸
 
 A static Japanese-learning website designed for GitHub Pages.
 
