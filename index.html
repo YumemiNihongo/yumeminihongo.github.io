@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A beautiful Japanese learning website with level-based study material.">
+  <title>Yumemi Nihongo — Learn Japanese</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+    <style>
+      .site-logo {
+        width: 58px;
+        height: 58px;
+        object-fit: contain;
+        border-radius: 50%;
+        display: block;
+        flex: 0 0 auto;
+      }
+      footer .site-logo {
+        width: 46px;
+        height: 46px;
+      }
+      .brand {
+        align-items: center;
+      }
+    </style>
+
+</head>
+<body>
+  <div class="petals" aria-hidden="true">
+    <span>✿</span><span>✿</span><span>✿</span><span>✿</span><span>✿</span>
+  </div>
+
+  <header class="nav">
+    <a class="brand" href="#">
+      <img class="site-logo" src="logo.png" alt="Yumemi Nihongo logo">
+      <span>Yumemi <b>Nihongo</b></span>
+    </a>
+    <nav>
+      <a href="#levels">Levels</a>
+      <a href="#materials">Materials</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="nav-btn" href="#levels">Start Learning</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">日本語を学ぼう · Learn Japanese</div>
+        <h1>Learn Japanese,<br><em>one sakura</em> at a time.</h1>
+        <p>Level-based Japanese study material for beginners and beyond — from Hiragana & Katakana to JLPT preparation.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#levels">Explore Levels <span>→</span></a>
+          <a class="secondary" href="#materials">View Materials</a>
+        </div>
+        <div class="mini-stats">
+          <div><strong>5</strong><span>JLPT Levels</span></div>
+          <div><strong>100%</strong><span>Free to learn</span></div>
+          <div><strong>日本語</strong><span>Made with love</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="sun"></div>
+        <div class="torii"><i></i><b></b><span></span></div>
+        <div class="mountain m1"></div>
+        <div class="mountain m2"></div>
+        <div class="branch"></div>
+        <div class="cherry c1">✿</div><div class="cherry c2">✿</div><div class="cherry c3">✿</div>
+        <div class="kanji-card">日本語</div>
+      </div>
+    </section>
+
+    <section id="levels" class="section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">CHOOSE YOUR PATH</span>
+          <h2>Study by your <em>level</em></h2>
+        </div>
+        <p>Follow a simple path and build your Japanese step by step.</p>
+      </div>
+
+      <div class="level-grid">
+        <article class="level-card beginner">
+          <div class="level-top"><span class="level-pill">START HERE</span><span class="jp">初級</span></div>
+          <h3>Beginner</h3><p>Hiragana, Katakana, basic greetings & everyday phrases.</p>
+          <div class="topics"><span>ひらがな</span><span>カタカナ</span><span>Basics</span></div>
+          <a href="#materials">Start →</a>
+        </article>
+        <article class="level-card n5">
+          <div class="level-top"><span class="level-pill">JLPT N5</span><span class="jp">N5</span></div>
+          <h3>Elementary</h3><p>Essential grammar, vocabulary, kanji and simple conversations.</p>
+          <div class="topics"><span>Grammar</span><span>Kanji</span><span>Vocabulary</span></div>
+          <a href="#materials">Study N5 →</a>
+        </article>
+        <article class="level-card n4">
+          <div class="level-top"><span class="level-pill">JLPT N4</span><span class="jp">N4</span></div>
+          <h3>Pre-Intermediate</h3><p>Expand grammar and reading skills for practical Japanese.</p>
+          <div class="topics"><span>Grammar</span><span>Reading</span><span>Kanji</span></div>
+          <a href="#materials">Study N4 →</a>
+        </article>
+        <article class="level-card n3">
+          <div class="level-top"><span class="level-pill">JLPT N3</span><span class="jp">N3</span></div>
+          <h3>Intermediate</h3><p>More natural Japanese, longer texts and intermediate grammar.</p>
+          <div class="topics"><span>Reading</span><span>Listening</span><span>Grammar</span></div>
+          <a href="#materials">Study N3 →</a>
+        </article>
+        <article class="level-card advanced">
+          <div class="level-top"><span class="level-pill">N2 / N1</span><span class="jp">上級</span></div>
+          <h3>Advanced</h3><p>High-level vocabulary, complex grammar and authentic Japanese.</p>
+          <div class="topics"><span>Advanced Kanji</span><span>Reading</span><span>Business</span></div>
+          <a href="#materials">Study Advanced →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="materials" class="section materials">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">YOUR STUDY TOOLKIT</span>
+          <h2>Everything you need to <em>grow</em></h2>
+        </div>
+      </div>
+      <div class="material-grid">
+        <a class="material" href="#"><div class="icon">あ</div><div><h3>Hiragana & Katakana</h3><p>Learn both Japanese alphabets with easy charts.</p></div><span>↗</span></a>
+        <a class="material" href="#"><div class="icon">文</div><div><h3>Grammar Notes</h3><p>Clear explanations with examples from N5 to N1.</p></div><span>↗</span></a>
+        <a class="material" href="#"><div class="icon">漢</div><div><h3>Kanji Library</h3><p>Meaning, readings and example words.</p></div><span>↗</span></a>
+        <a class="material" href="#"><div class="icon">語</div><div><h3>Vocabulary</h3><p>Level-wise words for daily Japanese and JLPT.</p></div><span>↗</span></a>
+        <a class="material" href="#"><div class="icon">聞</div><div><h3>Listening Practice</h3><p>Train your ear with practical Japanese.</p></div><span>↗</span></a>
+        <a class="material" href="#"><div class="icon">試</div><div><h3>JLPT Practice</h3><p>Questions and mini quizzes to test yourself.</p></div><span>↗</span></a>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-flower">桜</div>
+      <div>
+        <span class="eyebrow">ABOUT THE WEBSITE</span>
+        <h2>Made for people who want to <em>actually learn.</em></h2>
+        <p>Yumemi Nihongo is an independent Japanese-learning project created and maintained by <strong>Aditya</strong>. The goal is simple: make Japanese study material organized, beautiful and easy to use.</p>
+      </div>
+      <div class="owner"><span>Website owner</span><strong>Aditya</strong><small>アディティヤ</small></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand"><img class="site-logo" src="logo.png" alt="Yumemi Nihongo logo"><span>Yumemi <b>Nihongo</b></span></div>
+    <p>Learn Japanese with patience, consistency & a little dream magic. 🌸</p>
+    <span>© 2026 Aditya</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
