@@ -1,123 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Katakana — Yumemi Nihongo</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <style>
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,"Noto Sans JP",sans-serif;background:#fffafc;color:#30262b}
-    header{padding:18px 6%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #f2dfe7;background:#fff}
-    .brand{font-weight:800;text-decoration:none;color:#30262b;font-size:20px}
-    .brand span{color:#d96b91}
-    .back{padding:10px 16px;border-radius:999px;background:#f8e1ea;color:#7e3d56;text-decoration:none;font-weight:700}
-    main{max-width:1050px;margin:auto;padding:55px 6% 70px}
-    .eyebrow{color:#c45d83;font-weight:800;letter-spacing:1.5px;font-size:12px}
-    h1{font-size:clamp(38px,7vw,68px);margin:10px 0}
-    h1 em{color:#d96b91;font-style:normal}
-    .intro{max-width:650px;line-height:1.7;color:#665960}
-    .kana-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(105px,1fr));gap:12px;margin-top:32px}
-    .card{background:white;border:1px solid #f0dce5;border-radius:18px;padding:18px 10px;text-align:center;box-shadow:0 7px 20px rgba(120,70,90,.06)}
-    .kana{font-family:"Noto Sans JP",sans-serif;font-size:38px;font-weight:700}
-    .romaji{margin-top:6px;color:#a64f70;font-weight:700}
-    .practice{margin-top:45px;padding:28px;border-radius:24px;background:#fff0f5;border:1px solid #f3d4e0}
-    button{border:0;border-radius:999px;padding:12px 20px;background:#d96b91;color:white;font-weight:800;cursor:pointer}
-    #result{margin-left:12px;font-weight:700}
-    footer{text-align:center;padding:25px;color:#8b747d}
-  </style>
-</head>
-<body>
-<header>
-  <a class="brand" href="index.html">Yumemi <span>Nihongo</span> 夢見日本語</a>
-  <a class="back" href="index.html">← Home</a>
-</header>
-
-<main>
-  <span class="eyebrow">KATAKANA · カタカナ</span>
-  <h1>Learn <em>Katakana</em></h1>
-  <p class="intro">Learn the Japanese script commonly used for foreign words, names, places and many loanwords. Start with the basic characters and read the romaji below each one.</p>
-
-  <section class="kana-grid">
-    <div class="card"><div class="kana">ア</div><div class="romaji">a</div></div>
-    <div class="card"><div class="kana">イ</div><div class="romaji">i</div></div>
-    <div class="card"><div class="kana">ウ</div><div class="romaji">u</div></div>
-    <div class="card"><div class="kana">エ</div><div class="romaji">e</div></div>
-    <div class="card"><div class="kana">オ</div><div class="romaji">o</div></div>
-
-    <div class="card"><div class="kana">カ</div><div class="romaji">ka</div></div>
-    <div class="card"><div class="kana">キ</div><div class="romaji">ki</div></div>
-    <div class="card"><div class="kana">ク</div><div class="romaji">ku</div></div>
-    <div class="card"><div class="kana">ケ</div><div class="romaji">ke</div></div>
-    <div class="card"><div class="kana">コ</div><div class="romaji">ko</div></div>
-
-    <div class="card"><div class="kana">サ</div><div class="romaji">sa</div></div>
-    <div class="card"><div class="kana">シ</div><div class="romaji">shi</div></div>
-    <div class="card"><div class="kana">ス</div><div class="romaji">su</div></div>
-    <div class="card"><div class="kana">セ</div><div class="romaji">se</div></div>
-    <div class="card"><div class="kana">ソ</div><div class="romaji">so</div></div>
-
-    <div class="card"><div class="kana">タ</div><div class="romaji">ta</div></div>
-    <div class="card"><div class="kana">チ</div><div class="romaji">chi</div></div>
-    <div class="card"><div class="kana">ツ</div><div class="romaji">tsu</div></div>
-    <div class="card"><div class="kana">テ</div><div class="romaji">te</div></div>
-    <div class="card"><div class="kana">ト</div><div class="romaji">to</div></div>
-
-    <div class="card"><div class="kana">ナ</div><div class="romaji">na</div></div>
-    <div class="card"><div class="kana">ニ</div><div class="romaji">ni</div></div>
-    <div class="card"><div class="kana">ヌ</div><div class="romaji">nu</div></div>
-    <div class="card"><div class="kana">ネ</div><div class="romaji">ne</div></div>
-    <div class="card"><div class="kana">ノ</div><div class="romaji">no</div></div>
-
-    <div class="card"><div class="kana">ハ</div><div class="romaji">ha</div></div>
-    <div class="card"><div class="kana">ヒ</div><div class="romaji">hi</div></div>
-    <div class="card"><div class="kana">フ</div><div class="romaji">fu</div></div>
-    <div class="card"><div class="kana">ヘ</div><div class="romaji">he</div></div>
-    <div class="card"><div class="kana">ホ</div><div class="romaji">ho</div></div>
-
-    <div class="card"><div class="kana">マ</div><div class="romaji">ma</div></div>
-    <div class="card"><div class="kana">ミ</div><div class="romaji">mi</div></div>
-    <div class="card"><div class="kana">ム</div><div class="romaji">mu</div></div>
-    <div class="card"><div class="kana">メ</div><div class="romaji">me</div></div>
-    <div class="card"><div class="kana">モ</div><div class="romaji">mo</div></div>
-
-    <div class="card"><div class="kana">ヤ</div><div class="romaji">ya</div></div>
-    <div class="card"><div class="kana">ユ</div><div class="romaji">yu</div></div>
-    <div class="card"><div class="kana">ヨ</div><div class="romaji">yo</div></div>
-
-    <div class="card"><div class="kana">ラ</div><div class="romaji">ra</div></div>
-    <div class="card"><div class="kana">リ</div><div class="romaji">ri</div></div>
-    <div class="card"><div class="kana">ル</div><div class="romaji">ru</div></div>
-    <div class="card"><div class="kana">レ</div><div class="romaji">re</div></div>
-    <div class="card"><div class="kana">ロ</div><div class="romaji">ro</div></div>
-
-    <div class="card"><div class="kana">ワ</div><div class="romaji">wa</div></div>
-    <div class="card"><div class="kana">ヲ</div><div class="romaji">wo</div></div>
-    <div class="card"><div class="kana">ン</div><div class="romaji">n</div></div>
-  </section>
-
-  <section class="practice">
-    <h2>✨ Quick Practice</h2>
-    <p>What is the romaji for <strong id="kana">ア</strong>?</p>
-    <button onclick="check()">Show Answer</button>
-    <span id="result"></span>
-  </section>
-</main>
-
-<footer>© 2026 Yumemi Nihongo · Learn Japanese, Dream in Japanese 🌸</footer>
-
-<script>
-const quiz = [
-  ["ア","a"],["カ","ka"],["シ","shi"],["ツ","tsu"],["ネ","ne"],
-  ["フ","fu"],["マ","ma"],["ユ","yu"],["レ","re"],["ン","n"]
-];
-let q = quiz[Math.floor(Math.random()*quiz.length)];
-document.getElementById("kana").textContent = q[0];
-function check(){
-  document.getElementById("result").textContent = "Answer: " + q[1];
-}
-</script>
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Katakana — Yumemi Nihongo</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet"><style>
+:root{--pink:#d96b91;--dark:#30262b;--muted:#74636a;--line:#f0dce5;--bg:#fff7fa;--card:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--dark);font-family:Inter,Arial,sans-serif;line-height:1.55}
+header{background:#fff;border-bottom:1px solid var(--line);padding:16px 5%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:5}
+.brand{font-weight:900;text-decoration:none;color:var(--dark)}.brand span{color:var(--pink)}
+.back{color:#7e3d56;text-decoration:none;font-weight:800}
+main{max-width:1050px;margin:0 auto;padding:35px 18px 60px}
+.hero{background:#fff;border:1px solid var(--line);border-radius:26px;padding:28px;margin-bottom:24px}
+.eyebrow{font-size:12px;font-weight:900;letter-spacing:2px;color:#c45d83}.hero h1{font-size:40px;margin:8px 0}.hero p{color:var(--muted)}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.toolbar input,.toolbar select{padding:12px 14px;border:1px solid #e8d6de;border-radius:12px;background:#fff;font:inherit}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:19px}
+.card h3{margin:0 0 5px}.jp{font-family:"Noto Sans JP",Arial,sans-serif;font-size:28px;font-weight:800}.romaji{color:var(--pink);font-weight:800}.muted{color:var(--muted)}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}th,td{text-align:left;padding:12px;border-bottom:1px solid #f1e4e8}th{background:#fff0f5}
+button,.btn{border:0;border-radius:999px;padding:11px 16px;background:var(--pink);color:#fff;font-weight:800;cursor:pointer;text-decoration:none;display:inline-block}
+.secondary{background:#f6e6ec;color:#7e3d56}.answer{display:none;margin-top:10px;padding:10px;background:#fff3f7;border-radius:10px}
+.lesson{margin:15px 0}.lesson h2{font-size:24px}.example{background:#fff8fb;border-left:4px solid var(--pink);padding:12px 15px;margin:10px 0;border-radius:0 12px 12px 0}
+footer{text-align:center;color:#8b747d;padding:30px}
+@media(max-width:600px){.hero h1{font-size:32px}header{padding:14px 4%}}
+</style></head>
+<body><header><a class="brand" href="index.html">Yumemi <span>Nihongo</span> 夢見日本語</a><a class="back" href="index.html">← Home</a></header>
+<main><section class="hero"><span class="eyebrow">N5 · カタカナ</span><h1>Katakana</h1><p>Master all 46 basic characters. Tap each card to hear the pronunciation.</p></section>
+<section class="grid"><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ア</div><div class="romaji">a</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">イ</div><div class="romaji">i</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ウ</div><div class="romaji">u</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">エ</div><div class="romaji">e</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">オ</div><div class="romaji">o</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">カ</div><div class="romaji">ka</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">キ</div><div class="romaji">ki</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ク</div><div class="romaji">ku</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ケ</div><div class="romaji">ke</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">コ</div><div class="romaji">ko</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">サ</div><div class="romaji">sa</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">シ</div><div class="romaji">shi</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ス</div><div class="romaji">su</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">セ</div><div class="romaji">se</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ソ</div><div class="romaji">so</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">タ</div><div class="romaji">ta</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">チ</div><div class="romaji">chi</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ツ</div><div class="romaji">tsu</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">テ</div><div class="romaji">te</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ト</div><div class="romaji">to</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ナ</div><div class="romaji">na</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ニ</div><div class="romaji">ni</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ヌ</div><div class="romaji">nu</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ネ</div><div class="romaji">ne</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ノ</div><div class="romaji">no</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ハ</div><div class="romaji">ha</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ヒ</div><div class="romaji">hi</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">フ</div><div class="romaji">fu</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ヘ</div><div class="romaji">he</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ホ</div><div class="romaji">ho</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">マ</div><div class="romaji">ma</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ミ</div><div class="romaji">mi</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ム</div><div class="romaji">mu</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">メ</div><div class="romaji">me</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">モ</div><div class="romaji">mo</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ヤ</div><div class="romaji">ya</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ユ</div><div class="romaji">yu</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ヨ</div><div class="romaji">yo</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ラ</div><div class="romaji">ra</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">リ</div><div class="romaji">ri</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ル</div><div class="romaji">ru</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">レ</div><div class="romaji">re</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ロ</div><div class="romaji">ro</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ワ</div><div class="romaji">wa</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ヲ</div><div class="romaji">wo</div></article><article class="card" style="text-align:center"><div class="jp" style="font-size:48px">ン</div><div class="romaji">n</div></article></section></main><footer>© 2026 Yumemi Nihongo · Learn Japanese, Dream in Japanese 🌸</footer><script>document.querySelectorAll('.card').forEach(c=>c.onclick=()=>{let t=c.querySelector('.jp').innerText;let u=new SpeechSynthesisUtterance(t);u.lang='ja-JP';speechSynthesis.cancel();speechSynthesis.speak(u)});</script></body></html>

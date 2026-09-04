@@ -25,7 +25,7 @@
       <a href="#materials">Materials</a>
       <a href="#about">About</a>
     </nav>
-    <a class="nav-btn" href="#levels">Start Learning</a>
+    <a class="nav-btn" id="authBtn" href="login.html">Login</a>
   </header>
 
   <main>
@@ -106,12 +106,12 @@
         </div>
       </div>
       <div class="material-grid">
-        <a class="material" href="hiragana.html"><div class="icon">あ</div><div><h3>Hiragana & Katakana</h3><p>Learn both Japanese alphabets with easy charts.</p></div><span>↗</span></a>
-        <a class="material" href="grammar.html"><div class="icon">文</div><div><h3>Grammar Notes</h3><p>Clear explanations with examples from N5 to N1.</p></div><span>↗</span></a>
-        <a class="material" href="kanji.html"><div class="icon">漢</div><div><h3>Kanji Library</h3><p>Meaning, readings and example words.</p></div><span>↗</span></a>
-        <a class="material" href="vocabulary.html"><div class="icon">語</div><div><h3>Vocabulary</h3><p>Level-wise words for daily Japanese and JLPT.</p></div><span>↗</span></a>
-        <a class="material" href="listening.html"><div class="icon">聞</div><div><h3>Listening Practice</h3><p>Train your ear with practical Japanese.</p></div><span>↗</span></a>
-        <a class="material" href="jlpt.html"><div class="icon">試</div><div><h3>JLPT Practice</h3><p>Questions and mini quizzes to test yourself.</p></div><span>↗</span></a>
+        <a class="material" href="#"><div class="icon">あ</div><div><h3>Hiragana & Katakana</h3><p>Learn both Japanese alphabets with easy charts.</p></div><span>↗</span></a>
+        <a class="material" href="#"><div class="icon">文</div><div><h3>Grammar Notes</h3><p>Clear explanations with examples from N5 to N1.</p></div><span>↗</span></a>
+        <a class="material" href="#"><div class="icon">漢</div><div><h3>Kanji Library</h3><p>Meaning, readings and example words.</p></div><span>↗</span></a>
+        <a class="material" href="#"><div class="icon">語</div><div><h3>Vocabulary</h3><p>Level-wise words for daily Japanese and JLPT.</p></div><span>↗</span></a>
+        <a class="material" href="#"><div class="icon">聞</div><div><h3>Listening Practice</h3><p>Train your ear with practical Japanese.</p></div><span>↗</span></a>
+        <a class="material" href="#"><div class="icon">試</div><div><h3>JLPT Practice</h3><p>Questions and mini quizzes to test yourself.</p></div><span>↗</span></a>
       </div>
     </section>
 
@@ -124,7 +124,7 @@
       </div>
       <div class="owner"><span>Website owner</span><strong>Aditya</strong><small>アディティヤ</small></div>
     </section>
-  </main>
+  <section style="max-width:1100px;margin:40px auto;padding:0 20px"><div style="background:#fff;border:1px solid #f0dce5;border-radius:22px;padding:22px;text-align:center"><h2 style="margin:0 0 8px">🌸 N5 Complete Materials</h2><p style="margin:0;color:#74636a">Grammar, Kanji, Vocabulary, Listening and JLPT practice have been expanded.</p></div></section></main>
 
   <footer>
     <div class="brand"><span class="brand-mark">桜</span><span>Yumemi <b>Nihongo</b></span></div>
@@ -132,5 +132,20 @@
     <span>© 2026 Aditya</span>
   </footer>
   <script src="script.js"></script>
-</body>
+<script src="auth.js"></script>
+<script>
+(function(){
+ const u=ynUser(), nav=document.querySelector("header nav");
+ if(u && nav){
+   const a=document.createElement("a"); a.href="#account"; a.textContent="Hi, "+u.name;
+   a.style.cssText="font-weight:700;text-decoration:none;";
+   nav.appendChild(a);
+ }
+})();
+</script><script>
+(function(){
+ const b=document.getElementById("authBtn"),u=ynUser();
+ if(b&&u){b.textContent="Logout";b.href="#";b.onclick=function(e){e.preventDefault();ynLogout();};}
+})();
+</script></body>
 </html>
